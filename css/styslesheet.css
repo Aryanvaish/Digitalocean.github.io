@@ -1,0 +1,746 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+}
+
+html{
+    font-size: 62.5%;
+    box-sizing: border-box;
+    font-family: "Open Sans";
+    background-color: var(--whiteshade);
+}
+
+body{
+    margin: 0;
+    padding: 0;
+}
+
+h1{
+    font-family: "Open Sans";
+}
+
+h2{
+    font-family: "Open Sans";
+}
+
+h3{
+    font-family: "Open Sans";
+}
+
+.sprits{
+    background-image: url(../Images/sprites.png);
+    display: inline-block;    
+    background-repeat: no-repeat;   
+}
+
+.container-fluid{
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.container{
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+:root{
+    --darkblue: #1c1560;
+    --lightblue: #6a5fd3;
+    --whiteshade: #f0eaea;
+    --fadedwhite: #ecc3e7;
+    --white: #fff;
+    --login-btn: #111112;
+    --form-black: #242323;
+    --placeholder: #5d5d5d;
+    --placeh-underline: #727272;
+    --wlcm-btn: #9d9b9b;
+    --googleGit: #3654b5;
+    --asimple: #f6f1f1;
+    --asimple-headline: #323131;
+    --dark-brownish: #121212;
+    --we-here: #eadeff;
+    --formbtn-font: #141313;
+    --conticon-h2: #353434;
+    --darkheading-h1: #313030;
+    --peach-backg: #fbfbfb;
+    --whytho-h1: #1a1919;
+    --faclayout-a: #302d2d;
+    --getstarted-btn: #081b4b;
+    --endlink-white: #e3e8f4;
+    --mediumfont: 500;
+    --semibold: 600;
+    --bold: 700;
+    --bolder: 800;
+
+}
+
+.getsupport{
+    background-color: var(--darkblue);
+    padding: 1rem 3rem;
+    display: flex;
+    justify-content: space-between;
+    filter: drop-shadow(0.588px 0.809px 0.5px rgba(0,0,0,0.52));
+}
+
+.getsupport h1{
+    font-size: 1.4rem;
+    letter-spacing: 0px;
+    color: var(--fadedwhite);
+    font-weight: var(--bold);
+    text-align: center;
+    margin: 0 0 0 1.5rem;
+}
+
+.getsupport ul{
+    display: flex;
+}
+
+.getsupport ul li{
+    margin: 0 1.2rem;
+    list-style: none;
+}
+
+
+.getsupport ul li a{
+    text-decoration: none;
+    font-size: 1.3rem;
+    color: var(--fadedwhite);
+    font-weight: var(--bold);
+    text-align: center;
+}
+
+.getsupport ul li a:hover{
+    color: var(--lightblue);
+}
+
+.navbar{
+    background-color: var(--white);
+    padding: 1rem 4rem;
+    display: flex;
+    justify-content: space-between;
+    filter: drop-shadow(0.588px 0.809px 0.5px rgba(0,0,0,0.52));
+}
+
+.web-logo{
+    width: 25.5rem;
+	height: 4.4rem;
+    background-position: -30px -20px;
+    margin: .1rem 0 0 0;   
+}
+
+.logonav ul{
+    display: flex;
+}
+
+.logonav ul li{
+    margin: 1.3rem 1.6rem 0 1.6rem;
+    list-style: none;
+}
+
+.logonav ul li a{
+    font-size: 1.5rem;
+    font-weight: var(--semibold);
+    text-decoration: none;
+}
+
+.log-sign{
+    margin: 1rem 0 0 0;
+}
+
+.log-sign a{
+    font-size: 1.6rem;
+    color: var(--login-btn);
+    font-weight: var(--semibold);
+    text-decoration: none;   
+}
+
+.log-sign button{
+    width: 7rem;
+    height: 3rem;
+    border-radius: .6rem;
+    background-color: var(--lightblue);
+    font-size: 1.3rem;
+    color: var(--white);
+    font-weight: var(--bold);
+    cursor: pointer;
+    border: 0;
+    margin: 0 0 0 3rem;
+}
+
+.Welcome-banner{
+    background-color: var(--lightblue);
+    display: flex;
+    justify-content: space-evenly;
+    padding: 0 0 22rem 0;
+}
+
+.welcome-text h1{
+    font-size: 4rem;
+    color: var(--white);
+    font-weight: var(--bolder);
+    margin: 10rem 0 5rem .2rem;
+}
+
+.tick-logo{
+    width: 2rem;
+	height: 1.5rem;
+    background-position: -320px -37px;
+}
+
+.welcome-text i{
+    margin:  0 1.2rem 0 0;
+}
+
+.welcome-text ul li{
+    list-style: none;
+    margin: 2.5rem 0;
+    font-size: 1.9rem;
+    color: var(--white);
+    font-weight: var(--semibold);
+}
+
+.welcome-form{
+    width: 30rem;
+    height: 36.4rem;
+    border-radius: 3rem;
+    background-color: var(--white);
+    box-sizing: border-box;
+    display: flex;
+    margin: 10rem 0 0 0;
+    filter: drop-shadow(8px 8px 2px rgba(0,0,0,0.52));
+    padding: 2rem 2.9rem;
+}
+
+.welcome-form form h1{
+    font-size: 1.8rem;
+    line-height: 2.4rem;
+    color: var(--form-black);
+    font-weight: var(--bold);
+    margin: 1rem 0 0 0;
+}
+
+.welcome-form form h2{
+    font-size: 1.6rem;
+    line-height: 2.4rem;
+    color: var(--form-black);
+    font-weight: var(--semibold);
+    margin: 1.5rem 0 1rem 0;
+}
+
+.welcome-form form input{
+    width: 22rem;
+    height: 2.5rem;
+    border: 0;
+    padding: 0 0 0 .1rem;
+}
+
+.welcome-form form input::placeholder{
+    font-size: 1.5rem;
+    color: var(--placeholder);
+    font-weight: var(--semibold);
+    font-family: "Open Sans";
+    opacity: 1;
+}
+
+.createline{
+    height: .1rem;
+    width: 23rem;
+    margin: .5rem 0 0 .2rem;
+    background-color: var(--placeh-underline);
+}
+
+.welcome-form form button{
+    width: 23.5rem;
+    height: 3.9rem;
+    border-radius: .7rem;
+    background-color: var(--wlcm-btn);
+    font-size: 1.6rem;
+    color: var(--formbtn-font);
+    font-weight: var(--semibold);
+    font-family: "Open Sans";
+    border: none;
+    margin: 2.5rem 0 0 0;
+    cursor: pointer;
+}
+
+.googleGit{
+    display: flex;
+}
+
+.googleGit a{
+    font-size: 1.4rem;
+    line-height: 2.4rem;
+    color: var(--googleGit);
+    font-weight: var(--semibold);
+    margin: 1.5rem 0 1rem 0;
+    text-decoration: none;
+    padding: 0 .3rem;
+}
+
+.Asimple{
+    border-radius: 10rem;
+    background-color: var(--asimple);
+    padding: 5rem 6rem;
+    margin: -15rem 0 0 0;
+}
+
+.asimple-elems{
+    display: flex;
+    justify-content: space-between;
+}
+
+.asimple-headlines h1{
+    width: 50rem;
+    font-size: 3.6rem;
+    letter-spacing: .1rem;
+    line-height: 3.6rem;
+    color: var(--asimple-headline);
+    font-weight: var(--bold);
+    margin: .2rem 0 0 2.5rem;
+}
+
+.iconhead{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.complete-logo{
+    width: 2.5rem;
+	height: 2rem;
+    background-position: -48px -105px;;
+}
+
+.conticon{
+    margin: 0 0 5rem 0;
+}
+
+.iconhead i{
+    margin: -1rem 1rem 0 0;
+}
+
+.iconhead h1{
+    width: 50rem;
+    font-size: 2.4rem;
+    letter-spacing: .1rem;
+    line-height: 2.4rem;
+    color: var(--dark-brownish);
+    font-weight: var(--bold);
+    margin: .8rem 0 0 0;
+}
+
+.asimple-content{
+    margin: 0 0 5rem 0;
+}
+
+.conticon h2{
+    font-size: 1.6rem;
+    line-height: 20px;
+    color: var(--conticon-h2);
+    font-weight: var(--semibold);
+    width: 45rem;
+    margin: 4rem 0 0 3.5rem;
+}
+
+.rich-logo{
+    width: 2rem;
+	height: 2.5rem;
+    background-position: -50px -149px;
+}
+
+.iconhead2 i{
+    margin: .5rem 1rem 0 0;
+}
+
+.pred-logo{
+    width: 2rem;
+	height: 2.5rem;
+    background-position: -50px -204px;
+}
+
+.iconhead3 i{
+    margin: .5rem 1rem 0 0;
+}
+
+.cloud-logo{
+    width: 2.5rem;
+	height: 2.5rem;
+    background-position: -47px -259px;
+}
+
+.iconhead4 i{
+    margin: .9rem 1rem 0 0;
+}
+
+.plusrec-elems{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 0 0 8rem 0;
+}
+
+.plusrec-elems h1{
+    font-size: 3.6rem;
+    color: var(--darkheading-h1);
+    font-weight: var(--bold);
+}
+
+.plusrec-cont{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    box-sizing: border-box;
+    width: 85%;
+    margin: 6rem auto;    
+}
+
+.plusrec-lay{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    margin: 3rem;
+}
+
+.stopw-logo{
+    width: 4.5rem;
+	height: 5.5rem;
+    background-position: -122px -92px;
+}
+
+.plusrec-lay h2{
+    width: 25rem;
+    font-size: 2.0rem;
+    letter-spacing: .1rem;
+    line-height: 2.4rem;
+    color: var(--dark-brownish);
+    font-weight: var(--semibold);
+    margin: 1.5rem 0 0 0;
+}
+
+.cloud2-logo{
+    width: 6rem;
+	height: 5.5rem;
+    background-position: -210px -92px;
+}
+
+.moni-logo{
+    width: 5rem;
+	height: 5.5rem;
+    background-position: -315px -96px;
+}
+
+.dns-logo{
+    width: 4.5rem;
+	height: 5.5rem;
+    background-position: -418px -96px;
+}
+
+.glo-logo{
+    width: 5.5rem;
+	height: 5.6rem;
+    background-position: -117px -169px;
+}
+
+.hype-logo{
+    width: 6rem;
+	height: 6rem;
+    background-position: -210px -169px;
+}
+
+.ente-logo{
+    width: 5.5rem;
+	height: 5.5rem;
+    background-position: -312px -169px;
+}
+
+.api-logo{
+    width: 6rem;
+	height: 5.5rem;
+    background-position: -413px -169px;
+}
+
+.we-here{
+    border-radius: 6rem;
+    background-color: var(--we-here);
+    padding: 3rem 6rem 0 6rem;
+    margin: -16rem 0 0 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.were-cont{
+    display: flex;
+    flex-direction: row;
+}
+
+.we-here h1{
+    font-size: 3.6rem;
+    color: var(--darkheading-h1);
+    font-weight: var(--bold);
+    margin: 1rem 0 2rem 0;
+}
+
+.werecont-layout{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin: 5rem;
+}
+
+.file-logo{
+    width: 4.5rem;
+	height: 5.5rem;
+    background-position: -41px -317px;
+}
+
+.msg-logo{
+    width: 6rem;
+	height: 5rem;
+    background-position: -123px -320px;
+}
+
+.headp-logo{
+    width: 6rem;
+	height: 5rem;
+    background-position: -228px -322px;
+}
+
+.werecont-layout h2{
+    width: 30rem;
+    font-size: 1.8rem;
+    line-height: 24px;
+    color: var(--dark-brownish);
+    font-weight: var(--mediumfont);
+    text-align: center;
+    margin: 1rem 0 0 0;
+}
+
+.why-thou{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 4rem;
+}
+
+.why-thou h1{
+    font-size: 3.6rem;
+    color: var(--darkheading-h1);
+    font-weight: var(--bold);
+    margin: 2rem 0 2rem 0;
+}
+
+.whytho-elem{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+}
+
+.whytho-layout{
+    padding: 2rem 2.5rem;
+    border-radius: 3rem;
+    filter: drop-shadow(2.939px 4.045px 0.5px rgba(0,0,0,0.29));
+    background-color: var(--peach-backg);
+    margin: 4rem;
+}
+
+.whytho-layout h1{
+    font-size: 1.8rem;
+    color: var(--whytho-h1);
+    font-weight: var(--bold);
+    margin: 0;
+}
+
+.whytho-layout h2{
+    font-size: 1.6rem;
+    color: var(--darkblue);
+    font-weight: var(--semibold);
+    margin: 0 0 1.5rem 0;
+}
+
+.whytho-layout p{
+    width: 27.2rem;
+    font-size: 1.6rem;
+    line-height: 2.4rem;
+    color: var(--darkheading-h1);
+    font-weight: var(--semibold);
+}   
+
+.whybox1{
+    margin: -4.7rem 0 0 0;
+}
+
+.whybox3{
+    margin: -11.7rem 0 0 0;
+}
+
+.growing-startup{
+    width: 103.1rem;
+    height: 20rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 2rem 5rem;
+    margin: 0 auto;
+    border-radius: 4rem;
+    background-color: var(--darkblue);
+}
+
+.growing-text h1{
+    font-size: 3.6rem;
+    color: var(--white);
+    font-weight: var(--bold);
+    margin: -1rem 0 1rem 0;
+}
+
+.growing-text p{
+    width: 62.9rem;
+    font-size: 1.8rem;
+    line-height: 2.4rem;
+    color: var(--white);
+    font-weight: var(--semibold);
+    margin: 0 0 3.5rem 0;
+
+}
+
+.growing-text a{
+    font-size: 2.1rem;
+    color: var(--white);
+    font-weight: var(--bold);
+    text-decoration: none;
+}
+
+.astro-pic{
+    width: 23.1rem;
+	height: 18rem;
+    background-position: -340px -259px;
+}
+
+.faq{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 6rem;
+    margin: 0 0 1rem 0;
+}
+
+.faq h1{
+    font-size: 3.6rem;
+    color: var(--darkblue);
+    font-weight: var(--bold);   
+}
+
+.faq-elem{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    margin: 3rem 0 0 0;
+}
+
+.fac-layout{
+    max-width: 50rem;
+    height: 2.5rem;
+    padding: 2rem 2.5rem;
+    margin: 3rem 4rem;
+    border-radius: 2rem;
+    filter: drop-shadow(2.939px 4.045px 0.5px rgba(0,0,0,0.29));
+    background-color: var(--peach-backg);
+}
+
+.fac-layout a{
+    text-decoration: none;
+    font-size: 2.4rem;
+    line-height: 2.4rem;
+    color: var(--faclayout-a);
+    font-weight: var(--semibold);
+}
+
+.get-started{
+    margin: -1rem auto;
+    width: 65.2rem;
+    height: 19.6rem;
+    border-radius: 4rem;
+    filter: drop-shadow(2.939px 4.045px 0.5px rgba(0,0,0,0.29));
+    background-color: var(--we-here);
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.get-started h1{
+    font-size: 3.6rem;
+    color: var(--getstarted-btn);
+    font-weight: var(--bold);
+    text-align: center;
+    margin: -2rem 0 2rem 0;  
+}
+
+.get-started button{
+    font-family: "Open Sans";
+    width: 15.4rem;
+    height: 4.7rem;
+    border-radius: .8rem;
+    filter: drop-shadow(1.763px 2.427px 0.5px rgba(0,0,0,0.29));
+    background-color: var(--white);
+    font-size: 1.6rem;
+    color: var(--getstarted-btn);
+    font-weight: var(--semibold);
+    box-sizing: border-box;
+    cursor: pointer;
+}
+
+.endlinks{
+    width: 100%;
+    background-color: var(--lightblue);
+    display: flex;
+    flex-wrap: wrap;
+    margin: -10rem 0 0 0;
+    box-sizing: border-box;
+    padding: 10rem 12rem 0 12rem;
+    justify-content: space-evenly;
+}
+
+.format-endlink h1{
+    font-size: 3rem;
+    letter-spacing: .1rem;
+    color: var(--endlink-white);
+    font-weight: var(--bold);
+}
+
+.format-endlink ul{
+    margin: 2rem 0;
+}
+
+.format-endlink ul li{
+    margin: 1.2rem 0;
+    list-style: none;
+}
+
+.format-endlink{
+    margin: 3rem;
+}
+
+
+.format-endlink ul li a{
+    text-decoration: none;
+    font-size: 1.7rem;
+    font-weight: var(--semibold);
+    color: var(--endlink-white);
+    letter-spacing: .1rem;
+}
