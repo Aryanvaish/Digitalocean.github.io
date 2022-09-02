@@ -33,7 +33,11 @@
         <i class="sprits web-logo"></i>
       </div>
 
-      <div class="logonav">
+      <div class="menu-btn">
+        <span onclick="myfunction()">&#9776;</span>
+      </div>
+
+      <div class="logonav" id="logonav">
         <uL>
           <li><a href="#">Products</a></li>
           <li><a href="#">Solutions</a></li>
@@ -47,6 +51,8 @@
         <a href="#">Log in</a>
         <button>Sign up</button>
       </div>
+
+      
 
     </div>
   </div>
@@ -386,6 +392,22 @@
   </div>
 </section>      
 
+
+
+
+<script>
+  function myfunction(){
+      var x = document.getElementById("logonav");
+  
+      if(x.style.display == "block")
+      {
+        x.style.display = "none";
+      }
+      else{
+        x.style.display = "block";
+      }
+  }
+</script>
 
 </body>
 </html>
