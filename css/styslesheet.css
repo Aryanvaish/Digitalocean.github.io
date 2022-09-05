@@ -658,7 +658,6 @@ h3{
 
 .fac-layout{
     max-width: 50rem;
-    height: 2.5rem;
     padding: 2rem 2.5rem;
     margin: 3rem 4rem;
     border-radius: 2rem;
@@ -666,13 +665,35 @@ h3{
     background-color: var(--peach-backg);
 }
 
-.fac-layout a{
+.fac-colu{
+    display: flex;
+}
+
+.fac-colu a{
     text-decoration: none;
-    font-size: 2.4rem;
+    font-size: 1.9rem;
     line-height: 2.4rem;
     color: var(--faclayout-a);
     font-weight: var(--semibold);
 }
+
+.fac-colu a img{
+    height: 1rem;
+    width: 1.5rem;
+    margin: 0 0 0 1rem;
+    color: var(--darkblue);
+}
+
+.fac-layout h2{
+    width: 35rem;
+    font-size: 1.4rem;
+    line-height: 1.8rem;
+    margin: 2rem 0 0 0;
+    color: var(--faclayout-a);
+    font-weight: var(--bold);
+}
+
+.btnToggle1{display: none;}
 
 .get-started{
     margin: -1rem auto;
@@ -1345,7 +1366,7 @@ span{
         margin: 1.5rem auto;
     }
 
-    .fac-layout a {
+    .fac-colu a {
         font-size: 1.6rem;
         line-height: 2rem;    
     }
