@@ -277,33 +277,33 @@
           <div class="fac-layout">
             <div class="fac-colu">
               <a href="#">How do I sign up for the free trial ?</a>
-              <a href="#" onclick="hideshow()"><img src="images/caret-down-solid(1).png"></a>
+              <a href="" ><img src="images/caret-down-solid(1).png" onclick="hideshow(1, 1)"></a>
             </div> 
-            <h2 class="btnToggle1">Our cloud-agnostic open source guides help millions of developers learn and build new software every day...</h2> 
+            <h2 class="btnToggle1 hide1show1" id="hide1show1">Our cloud-agnostic open source guides help millions of developers learn and build new software every day...</h2> 
           </div>
 
           <div class="fac-layout">
             <div class="fac-colu">
               <a href="#">What forms of payment do you accept ?</a>
-              <a href="#" onclick="hideshow()"><img src="images/caret-down-solid(1).png"></a>
+              <a href="" onclick="hideshow(1, 2)"><img src="images/caret-down-solid(1).png"></a>
             </div> 
-            <h2 class="btnToggle1" id="btnToggle1">Our cloud-agnostic open source guides help millions of developers learn and build new software every day...</h2>  
+            <h2 class="btnToggle1 hide1show2" id="hide1show2">Our cloud-agnostic open source guides help millions of developers learn and build new software every day...</h2>  
           </div>
 
           <div class="fac-layout">
             <div class="fac-colu">
               <a href="#">How do I sign up for the free trial ?</a>
-              <a href="#" onclick="hideshow()"><img src="images/caret-down-solid(1).png"></a>
+              <a href="" onclick="hideshow(1, 3)"><img src="images/caret-down-solid(1).png"></a>
             </div>  
-            <h2 class="btnToggle1" id="btnToggle1">Our cloud-agnostic open source guides help millions of developers learn and build new software every day...</h2> 
+            <h2 class="btnToggle1 hide1show3" id="hide1show3">Our cloud-agnostic open source guides help millions of developers learn and build new software every day...</h2> 
           </div>
 
           <div class="fac-layout">
             <div class="fac-colu">
               <a href="#">What forms of payment do you accept ?</a>
-              <a href="#" onclick="hideshow()"><img src="images/caret-down-solid(1).png"></a>
+              <a href="#" onclick="hideshow(1, 4)"><img src="images/caret-down-solid(1).png"></a>
             </div> 
-            <h2 class="btnToggle1">Our cloud-agnostic open source guides help millions of developers learn and build new software every day...</h2>  
+            <h2 class="btnToggle1 hide1show4" id="hide1show4">Our cloud-agnostic open source guides help millions of developers learn and build new software every day...</h2>  
           </div>
 
           <div class="fac-layout">
@@ -431,6 +431,18 @@
         x.style.display = "block";
       }
   }
+
+
+
+  function hideshow(a, b) {
+    var y = document.getElementById(`hide${a}-show${b}`);
+
+  if (y.style.display == "block") {
+    y.style.display = "none";
+  } else {
+    y.style.display = "block";
+  }
+}
 
 </script>
 
