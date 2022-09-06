@@ -657,43 +657,46 @@ h3{
 }
 
 .fac-layout{
-    max-width: 50rem;
+    width: 40rem;
     padding: 2rem 2.5rem;
     margin: 3rem 4rem;
     border-radius: 2rem;
     filter: drop-shadow(2.939px 4.045px 0.5px rgba(0,0,0,0.29));
     background-color: var(--peach-backg);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 .fac-colu{
     display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
-.fac-colu a{
-    text-decoration: none;
+.fac-colu h1{
     font-size: 1.9rem;
     line-height: 2.4rem;
     color: var(--faclayout-a);
     font-weight: var(--semibold);
 }
 
-.fac-colu a img{
+.fac-colu img{
     height: 1rem;
     width: 1.5rem;
     margin: 0 0 0 1rem;
     color: var(--darkblue);
+
 }
 
 .fac-layout h2{
-    width: 35rem;
+    width: 36rem;
     font-size: 1.4rem;
     line-height: 1.8rem;
     margin: 2rem 0 0 0;
     color: var(--faclayout-a);
     font-weight: var(--bold);
 }
-
-.btnToggle1{display: none;}
 
 .get-started{
     margin: -1rem auto;
@@ -707,7 +710,6 @@ h3{
     flex-direction: column;
     align-items: center;
     justify-content: center;
-
 }
 
 .get-started h1{
@@ -967,12 +969,8 @@ span{
         margin: 0 0 0 -3rem;
     }
 
-    .faq h1{
-        font-size: 2.8rem; 
-    }
-
     .fac-layout{
-        width: 50rem;
+        width: 40rem;
     }
 
     .format-endlink h1{
@@ -1355,20 +1353,36 @@ span{
     }
 
     .faq h1 {
-        font-size: 1.8rem;
+        font-size: 2rem;
         margin: 4rem 0 0 0;
     }
 
+    .fac-colu img {
+        margin: 0 0 0 1rem;
+    }
+
+    .fac-colu h1 {
+        font-size: 1.4rem;
+        font-weight: var(--bold);
+        width: 20rem;
+        line-height: 1.8rem;
+        margin: 0;
+    }
+
     .fac-layout {
-        max-width: 25rem;
+        width: 28rem;
         border-radius: 1rem;
-        padding: 1rem 2.4rem 2.4rem 2.4rem;
+        padding: 1.2rem 1rem;
         margin: 1.5rem auto;
     }
 
-    .fac-colu a {
-        font-size: 1.6rem;
-        line-height: 2rem;    
+    .fac-layout h2 {
+        width: 24rem;
+        font-size: 1.4rem;
+        line-height: 1.8rem;
+        margin: 2rem 0 0 0;
+        color: var(--faclayout-a);
+        font-weight: var(--semibold);
     }
 
     .get-started {
