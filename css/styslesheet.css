@@ -698,6 +698,10 @@ h3{
     font-weight: var(--bold);
 }
 
+.btnToggle1{
+    display: none;
+}
+
 .get-started{
     margin: -1rem auto;
     width: 65.2rem;
